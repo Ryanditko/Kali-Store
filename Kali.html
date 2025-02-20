@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kali Store</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"> <!-- Bootstrap Icons -->
+    <style>
+        /* Estilo para fixar a logo */
+        .logo {
+            position: center; 
+            top: 20px; 
+            left: 20px; 
+            z-index: 1000; 
+        }
+
+        /* Estilo para o cabeçalho */
+        header {
+            padding-top: 100px; 
+        }
+
+        /* Estilo para as descrições dos produtos */
+        .product-description {
+            font-size: 0.9em;
+            color: #918f8f;
+            margin-top: 5px;
+        }
+
+        /* Estilo para a seção de produtos */
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Espaçamento entre os prodconsole.log("Application started");
+
+// Add logs for each section
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("DOM loaded");
+
+    // Add logs for each section
+    const sections = document.querySelectorAll("section");
+    sections.forEach(function(section) {
+        console.log(`Section loaded: ${section.id}`);
+    });
+});
+
+// Add logs for navigation
+document.addEventListener("click", function(event) {
+    if (event.target.tagName === "A") {
+        console.log(`Navigation to: ${event.target.href}`);
+    }
+});
+
+// Add logs for form submission
+const forms = document.querySelectorAll("form");
+forms.forEach(function(form) {
+    form.addEventListener("submit", function(event) {
+        console.log("Form submitted");
+        event.preventDefault();
+    });
+});utos */
+        }
+
+        .product-item {
+            border: 1px solid #87e1ff;
+            border-radius: 5px;
+            padding: 10px;
+            width: 200px; /* Largura fixa para os produtos */
+            text-align: center; /* Centraliza o texto */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="logo">
+        <img src="https://media.discordapp.net/attachments/1321567813839622256/1337193735254970470/Sem_Titulo-1.png?ex=67b11a36&is=67afc8b6&hm=20b981623b16d4ebe62fb83a2012c057744a16e3a98dee1acd726bf424033d2e&=&format=webp&quality=lossless" alt="Kali Store Logo" style="width: 250px; height: auto;">
+        <h1 style="font-size: 2em;">Kali</h1> 
+    </div>
+
+    <main>
+        <div>
+            <h3>FRETE GRÁTIS A PARTIR DE R$299</h3>
+            <p><strong>Compre agora e aproveite!</strong></p>
+            <a href="#Home"><i class="bi bi-house"></i> Home</a>
+            <section id="Home" class="section">
+                <h1>Bem Vindo a Kali </h1>
+                <h2>Seu destino definitivo para software livre e soluções tecnológicas, apresentamos a Kali Store.</h2>
+                
+            </section>
+
+            <div class="actions" style="position: absolute; top: 20px; right: 20px; display: flex; gap: 20px; font-size: 18px;">
+                <a href="#" class="btn btn-primary"><i class="bi bi-person-plus"></i> Cadastrar</a>
+                <a href="#"><i class="bi bi-shop"></i> Comprar</a>
+                <a href="#"><i class="bi bi-cart"></i> Carrinho</a>
+                <a href="#"><i class="bi bi-person-circle"></i> Conta</a>
+            </div>
+        </div>
+        
+
+        <form action="">
+            <input type="text" placeholder="Olá, o que você procura?">
+            <button type="submit"><i class="bi bi-search"></i> Pesquisar</button>
+        </form>
+
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#Sobre"><i class="bi bi-info-circle"></i> Sobre</a></li>
+                    <li><a href="#Promocao"><i class="bi bi-tag"></i> Promoção</a></li>
+                    <li><a href="#Lancamentos"><i class="bi bi-star"></i> Lançamentos</a></li>
+                    <li><a href="#MaisVendidos"><i class="bi bi-award"></i> Mais Vendidos</a></li>
+                    <li><a href="#Softwares"><i class="bi bi-code-square"></i> Softwares</a></li>
+                    <li><a href="#Cyberseguranca"><i class="bi bi-shield-shaded"></i> Cybersegurança</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section id="Sobre" class="section">
+            <h1>Sobre</h1>
+            <p>Na Kali Store, acreditamos que a tecnologia deve ser acessível a todos. Desde a nossa fundação, temos nos dedicado a oferecer uma ampla gama de softwares livres e soluções tecnológicas inovadoras que promovem a liberdade digital e a segurança online. Nossa missão é empoderar usuários e empresas com ferramentas que não apenas atendem às suas necessidades, mas também respeitam sua privacidade e segurança.
+
+                Nosso portfólio inclui softwares de segurança cibernética, ferramentas de produtividade e soluções de design, todos cuidadosamente selecionados para garantir a melhor experiência ao usuário. Trabalhamos com desenvolvedores e comunidades de código aberto para trazer as últimas inovações e garantir que nossos clientes tenham acesso às melhores ferramentas disponíveis no mercado.
+                
+                Na Kali Store, não apenas vendemos produtos; nós construímos uma comunidade. Estamos comprometidos em fornecer suporte excepcional e recursos educacionais para ajudar nossos clientes a tirar o máximo proveito de suas compras. Acreditamos que a educação é a chave para a segurança digital e, por isso, oferecemos tutoriais, webinars e suporte técnico para garantir que você esteja sempre um passo à frente.
+                
+                Junte-se a nós na jornada para um mundo digital mais seguro e livre. Explore nossa loja e descubra como podemos ajudá-lo a alcançar seus objetivos tecnológicos.</p>
+        </section>
+
+        <section id="Lancamentos" class="section" style="display: none;">
+            <h1>Lançamentos</h1>
+            <div class="product-list">
+                <div class="product-item">
+                    <a href="#">Kali Linux 2023</a>
+                    <span>R$ 99,00</span>
+                    <img src="https://static-00.iconduck.com/assets.00/distributor-logo-kali-linux-icon-2048x2005-dki611fk.png" alt="Kali Linux 2023" style="width: 100px; height: auto;">
+                    <p class="product-description">A versão mais recente do Kali Linux, ideal para testes de penetração e segurança de redes.</p>
+                </div>
+                <div class="product-item">
+                    <a href="#">Wireshark Pro</a>
+                    <span>R$ 149,00</span>
+                    <img src="https://static-00.iconduck.com/assets.00/wireshark-alt-icon-2048x2048-4ex8a9zk.png" style="width: 100px; height: auto;">
+                    <p class="product-description">Ferramenta de análise de pacotes de rede, perfeita para profissionais de segurança.</p>
+                </div>
+                <div class="product-item">
+                    <a href="#">Metasploit Pro</a>
+                    <span>R$ 299,00</span>
+                    <img src="https://media.licdn.com/dms/image/v2/D4E12AQFgL7C8h8qLww/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1680515780478?e=2147483647&v=beta&t=aT1YmUXfERWLTcsn3yD40oZbNzIg3IhFEg4Eobkfv_E" alt="Metasploit Pro" style="width: 100px; height: auto;">
+                    <p class="product-description">Plataforma de testes de penetração que permite a exploração de vulnerabilidades.</p>
+                </div>
+                <div class="product-item">
+                    <a href="#">Burp Suite Professional</a>
+                    <span>R$ 199,00</span>
+                    <img src="https://cdn4.iconfinder.com/data/icons/macaron-1/48/BurpSuite-512.png" style="width: 100px; height: auto;">
+                    <p class="product-description">Conjunto de ferramentas para testes de segurança em aplicações web.</p>
+                </div>
+                <div class="product-item">
+                    <a href="#">Nessus Essentials</a>
+                    <span>R$ 89,00</span>
+                    <img src="https://www.tenable.com/sites/drupal.dmz.tenablesecurity.com/files/images/blog/nessus15thlogo.png" alt="Nessus Essentials" style="width: 100px; height: auto;">
+                    <p class="product-description">Scanner de vulnerabilidades que ajuda a identificar falhas de segurança.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="MaisVendidos" class="section" style="display: none;">
+            <h1>Mais Vendidos</h1>
+            <div class="product-list">
+                <div class="product-item">
+                    <a href="#">Norton Antivirus</a>
+                    <span>R$ 129,00</span>
+                    <img src="https://images.dwncdn.net/images/t_app-icon-l/p/ae19ebde-1904-471c-a9c0-bb5c900dadf2/410615030/2239_4-10592477-imgingest-2978652659098564067.png" alt="Norton Antivirus" style="width: 100px; height: auto;">
+                    <p class="product-description">Proteção completa contra vírus e malware, ideal para usuários domésticos e empresariais.</p>
+                </div>
+                <div class="product-item">
+                    <a href="#">Microsoft Office 2021</a>
+                    <span>R$ 399,00</span>
+                    <img src="https://icons.iconarchive.com/icons/blackvariant/button-ui-ms-office-2016/256/Office-icon.png" alt="Microsoft Office 2021" style="width: 100px; height: auto;">
+                    <p class="product-description">Pacote de aplicativos de produtividade que inclui Word, Excel, PowerPoint e mais.</p>
+                </div>
+                <div class="product-item">
+                    <a href="#">Adobe Photoshop CC</a>
+                    <span>R$ 299,00</span>
+                    <img src="https://www.freepnglogos.com/uploads/photoshop-png-logo/photoshop-cc-round-png-logos-21.png" alt="Adobe Photoshop CC" style="width: 100px; height: auto;">
+                    <p class="product-description">Software de edição de imagens líder de mercado, ideal para designers e fotógrafos.</p>
+                </div>
+                <div class="product-item">
+                    <a href="#">Zoom Pro</a>
+                    <span>R$ 89,00</span>
+                    <img src="https://static.vecteezy.com/system/resources/previews/010/992/692/non_2x/social-media-zoom-realistic-icon-free-free-png.png" alt="Zoom Pro" style="width: 100px; height: auto;">
+                    <p class="product-description">Plataforma de videoconferência que permite reuniões online com recursos avançados.</p>
+                </div>
+                <div class="product-item">
+                    <a href="#">Slack Premium</a>
+                    <span>R$ 79,00</span>
+                    <img src="https://cdn-icons-png.flaticon.com/512/2584/2584687.png" alt="Slack Premium" style="width: 100px; height: auto;">
+                    <p class="product-description">Ferramenta de comunicação e colaboração para equipes, com integração de aplicativos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Promocao" class="section" style="display: none;">
+            <h1>Promoção</h1>
+            <div class="product-list">
+                <div class="product-item">
+                    <a href="#">Avast Free Antivirus</a>
+                    <span>R$ 0,00</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Avast_Software_white_logo.png" alt="Avast Free Antivirus" style="width: 100px; height: auto;">
+                    <p class="product-description">Antivírus gratuito que oferece proteção básica contra ameaças online.</p>
+                </div>
+                <div class="product-item">
+                    <a href="#">CCleaner Pro</a>
+                    <span>R$ 49,50</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/4/4a/CCleaner_logo_2013.png" alt="CCleaner Pro" style="width: 100px; height: auto;">
+                    <p class="product-description">Ferramenta de otimização de sistema que limpa arquivos desnecessários e melhora o desempenho.</p>
+                </div>
+                <div class="product-item">
+                    <a href="#">Malwarebytes Premium</a>
+                    <span>R$ 69,30</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Malwarebytes_Logo_Symbol.png" alt="Malwarebytes Premium" style="width: 100px; height: auto;">
+                    <p class="product-description">Proteção avançada contra malware e ransomware, ideal para segurança proativa.</p>
+                </div>
+                <div class="product-item">
+                    <a href="#">CorelDRAW Graphics Suite</a>
+                    <span>R$ 199,00</span>
+                    <img src="https://www.freeiconspng.com/thumbs/corel-draw-icon/corel-draw-logo-icon-5.png" alt="CorelDRAW Graphics Suite" style="width: 100px; height: auto;">
+                    <p class="product-description">Conjunto de ferramentas de design gráfico para criação de ilustrações e layouts.</p>
+                </div>
+                <div class="product-item">
+                    <a href="#">AnyDesk Remote Access</a>
+                    <span>R$ 39,00</span>
+                    <img src="https://static-00.iconduck.com/assets.00/anydesk-icon-2048x2048-1tqcckxw.png" alt="AnyDesk Remote Access" style="width: 100px; height: auto;">
+                    <p class="product-description">Software de acesso remoto que permite controlar computadores de qualquer lugar.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Softwares" class="section" style="display: none;">
+            <h1>Softwares</h1>
+            <div class="product-list">
+                <div class="product-item">
+                    <a href="#">Trello Business Class</a>
+                    <span>R$ 99,00</span>
+                    <img src="https://www.shareicon.net/data/512x512/2016/10/18/844317_trello-icon_512x512.png" alt="Trello Business Class" style="width: 100px; height: auto;">
+                    <p class="product-description">Ferramenta de gerenciamento de projetos que ajuda equipes a organizarem suas tarefas.</p>
+                </div>
+                <div class="product-item">
+                    <a href="#">Evernote Premium</a>
+                    <span>R$ 79,00</span>
+                    <img src="https://cdn-icons-png.flaticon.com/512/4494/4494684.png" alt="Evernote Premium" style="width: 100px; height: auto;">
+                    <p class="product-description">Aplicativo de anotações que permite capturar ideias e organizar informações de forma eficiente.</p>
+                </div>
+                <div class="product-item">
+                    <a href="#">Camtasia Studio</a>
+                    <span>R$ 299,00</span>
+                    <img src="https://static-00.iconduck.com/assets.00/apps-camtasia-studio-icon-2048x2048-ove7wqv8.png" alt="Camtasia Studio" style="width: 100px; height: auto;">
+                    <p class="product-description">Software de gravação e edição de vídeo, ideal para criar tutoriais e apresentações.</p>
+                </div>
+                <div class="product-item">
+                    <a href="#">Visual Studio Professional</a>
+                    <span>R$ 499,00</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Visual_Studio_Icon_2022.svg/1200px-Visual_Studio_Icon_2022.svg.png" alt="Visual Studio Professional" style="width: 100px; height: auto;">
+                    <p class="product-description">Ambiente de desenvolvimento integrado para criar aplicativos em diversas linguagens.</p>
+                </div>
+                <div class="product-item">
+                    <a href="#">AutoCAD LT</a>
+                    <span>R$ 1.199,00</span>
+                    <img src="https://seeklogo.com/images/A/autocad-logo-C9817CB828-seeklogo.com.png" alt="AutoCAD LT" style="width: 100px; height: auto;">
+                    <p class="product-description">Software de design assistido por computador (CAD) para criação de desenhos técnicos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Cyberseguranca" class="section" style="display: none;">
+            <h1>Cybersegurança</h1>
+            <div class="product-list">
+                <div class="product-item">
+                    <a href="#">Bitdefender Total Security</a>
+                    <span>R$ 199,00</span>
+                    <img src="https://getdrawings.com/free-icon/bitdefender-icon-58.png" alt="Bitdefender Total Security" style="width: 100px; height: auto;">
+                    <p class="product-description">Solução completa de segurança que protege contra vírus, malware e ameaças online.</p>
+                </div>
+                <div class="product-item">
+                    <a href="#">Kaspersky Internet Security</a>
+                    <span>R$ 179,00</span>
+                    <img src="https://seeklogo.com/images/K/kaspersky-logo-233A271B05-seeklogo.com.png" alt="Kaspersky Internet Security" style="width: 100px; height: auto;">
+                    <p class="product-description">Proteção avançada contra vírus e ataques cibernéticos, com recursos de privacidade.</p>
+                </div>
+                <div class="product-item">
+                    <a href="#">ZoneAlarm Pro</a>
+                    <span>R$ 99,00</span>
+                    <img src="https://www.techspot.com/images2/downloads/topdownload/2014/06/zonealarm.png" alt="ZoneAlarm Pro" style="width: 100px; height: auto;">
+                    <p class="product-description">Firewall e proteção contra intrusões, ideal para segurança de rede.</p>
+                </div>
+                <div class="product-item">
+                    <a href="#">Comodo Firewall</a>
+                    <span>R$ 0,00</span>
+                    <img src="https://www.nesabamedia.com/wp-content/uploads/2021/04/Comodo-Ice-Dragon-Logo-1.png" alt="Comodo Firewall" style="width: 100px; height: auto;">
+                    <p class="product-description">Firewall gratuito que protege seu computador contra ameaças externas.</p>
+                </div>
+                <div class="product-item">
+                    <a href="#">VeraCrypt</a>
+                    <span>R$ 0,00</span>
+                    <img src="https://static-00.iconduck.com/assets.00/veracrypt-icon-1024x650-57huwalv.png" alt="VeraCrypt" style="width: 100px; height: auto;">
+                    <p class="product-description">Software de criptografia de disco que protege seus dados sensíveis.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Comprar" class="section" style="display: none;">
+            <h1>Comprar</h1>
+            <p>Comprar na Kali Store é uma experiência simples e segura.</p>
+        </section>
+
+        <section id="Carrinho" class="section" style="display: none;">
+            <h1>Carrinho</h1>
+            <p>Seu carrinho de compras é o lugar onde você pode revisar todos os itens que selecionou.</p>
+        </section>
+
+        <section id="Conta" class="section" style="display: none;">
+            <h1>Conta</h1>
+            <p>Gerenciar sua conta na Kali Store é simples e eficiente.</p>
+        </section>
+
+        <section id="Suporte" class="section" style="display: none;">
+            <h1>Suporte</h1>
+            <p>Na Kali Store, estamos comprometidos em oferecer um suporte excepcional.</p>
+        </section>
+
+        <section id="PoliticaPrivacidade" class="section" style="display: none;">
+            <h1>Política de Privacidade</h1>
+            <p>Na Kali Store, levamos a sua privacidade a sério.</p>
+        </section>
+
+        <section id="TermosServico" class="section" style="display: none;">
+            <h1>Termos de Serviço</h1>
+            <p>Os Termos de Serviço da Kali Store estabelecem as regras e diretrizes que regem o uso de nosso site e serviços.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <div>
+            <h3><strong>Redes Sociais</strong></h3>
+        </div>
+        <div>
+            <a href="https://www.instagram.com/kalistore/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/kalistore/"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.twitter.com/kalistore/"><i class="bi bi-twitter"></i></a>
+        </div>
+        <div>
+            <h3><strong>Contato:</strong></h3>
+        </div>
+        <div> 
+            <a href="mailto:contato@kalistore.com"><i class="bi bi-envelope"></i></a>
+            <a href="https://www.linkedin.com/kalistore/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.whatsapp.com/kalistore/"><i class="bi bi-whatsapp"></i></a>
+        </div>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="#Suporte"><i class="bi bi-question-circle"></i> Suporte</a>
+            <a href="#PoliticaPrivacidade"><i class="bi bi-shield-lock"></i> Política de Privacidade</a>
+            <a href="#TermosServico"><i class="bi bi-file-earmark-text"></i> Termos de Serviço</a>
+        </div>
+    </footer>
+
+    <script src="main.js" defer></script> 
+</body>
+</html>
